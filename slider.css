@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+}
+.slideshow-container{
+	position: relative;
+}
+.prev,.next{
+	cursor: pointer;
+	position: absolute;
+	left: 0%;
+	top:50%;
+	padding: 16px;
+	margin-top:-22px;
+	width:auto;
+	color:#FFFFFF;
+	font-weight: bold;
+	border-radius: 0 3px 3px 0;
+	font-size:18px;
+	transition: 0.6s ease;
+}
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;	
+}
+.prev:hover,.next:hover{
+	background-color:rgba(0,0,0,0.8);
+}
+.next{
+	color:#f2f2f2f2
+	padding:8px 12px;
+	position: absolute;
+	top: 50%;
+    left: 96%;
+
+}
+.op{
+	position: absolute;
+	top:80%;
+	left:34%;
+}
+.dot{
+	cursor: pointer;
+	margin:0 2px;
+	opacity: 0.4;
+	display: inline-block;
+	transition:background-color 0.6s ease;
+
+}
+.active, .dot:hover{
+	opacity: 1;
+}
+.fade{
+	animation:fade 1.5s ease;
+
+}
+@keyframes fade{
+	0%{
+		opacity: 0.4;
+
+	}
+	100%{
+		opacity: 1;
+	}
+}
